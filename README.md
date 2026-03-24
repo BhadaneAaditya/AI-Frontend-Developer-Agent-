@@ -1,67 +1,51 @@
 🚀 AI Frontend Developer Agent
 
-An intelligent AI-powered system that acts like a frontend developer, capable of generating, modifying, and debugging React / Next.js UI code from simple natural language tasks.
+An AI-powered system that acts like a frontend developer, capable of generating, modifying, and debugging React / Next.js UI code from simple natural language instructions.
 
 🧠 Overview
 
 The AI Frontend Developer Agent automates frontend development by understanding user requirements and producing structured, production-ready UI code.
 
-It behaves like a junior–mid level frontend developer, handling everything from component creation to file structuring.
+It behaves like a junior–mid level frontend developer, handling everything from component creation to project structuring.
 
 ✨ Features
-🧾 Understands frontend tasks from plain English
-🧩 Breaks UI into reusable components
-💻 Generates React + Next.js + TypeScript code
-🎨 Uses TailwindCSS for styling
-🛠 Supports code modification & refactoring
-🐛 Detects and fixes UI bugs
-📁 Automatically creates project structure
-🧠 Maintains memory of generated files
-⚙️ Architecture
-USER INPUT
-    │
-    ▼
-Frontend Dev Agent
-    │
- ┌──┼───────────────┐
- ▼  ▼               ▼
-Requirement   Code Generator   Code Editor
-Interpreter       (LLM)         / Modifier
- └───────────────▼──────────────┘
-            Code Output Engine
-                    │
-                    ▼
-              File Generator
-                    │
-                    ▼
-            Frontend Project
-🔄 Workflow
-Task Input
-   ↓
-Requirement Parsing
-   ↓
-Task Planning
-   ↓
-Code Generation
-   ↓
-File Creation
-   ↓
-Code Review
-   ↓
-Final Output
+Understands frontend tasks from plain English
+Breaks UI into reusable components
+Generates React + Next.js + TypeScript code
+Uses TailwindCSS for styling
+Supports code modification & refactoring
+Detects and fixes UI bugs
+Automatically creates project structure
+Maintains memory of generated files
+⚙️ Workflow
+
+Task Input → Requirement Parsing → Task Planning → Code Generation → File Creation → Code Review → Final Output
+
 🏗 Tech Stack
+
 Backend
+
 Python
 FastAPI
+
 AI Layer
+
 OpenAI API / Anthropic API
+
 Agent Framework
+
 LangGraph (recommended)
+
 Memory
+
 ChromaDB / SQLite
+
 Execution
+
 Node.js (npm)
+
 Target Frontend
+
 React
 Next.js
 TypeScript
@@ -86,26 +70,29 @@ api/
 
 main.py
 🔌 API Endpoints
-➤ Create Task
+Create Task
+
 POST /task
 
-Body:
+Request Body
 
 {
   "task": "Create dashboard UI"
 }
-➤ Generate Code
+Generate Code
+
 POST /generate
 
-Response:
+Returns
 
 Generated files
 Folder structure
 Code output
-➤ Modify Code
+Modify Code
+
 POST /modify
 
-Body:
+Request Body
 
 {
   "instruction": "Make navbar sticky"
@@ -125,9 +112,13 @@ Output
   "summary": "Login page with reusable components created"
 }
 🧩 Example
+
 Input
+
 Build analytics dashboard UI
-Output Structure
+
+Generated Structure
+
 components/
   ChartCard.tsx
   MetricCard.tsx
@@ -135,9 +126,9 @@ components/
 
 pages/
   dashboard.tsx
-Summary
 
-Responsive dashboard with sidebar, metrics, and charts.
+Summary
+Responsive dashboard with sidebar navigation, metric cards, and chart components.
 
 🚀 Getting Started
 1. Clone the Repo
@@ -148,22 +139,14 @@ pip install -r requirements.txt
 3. Run Server
 uvicorn main:app --reload
 🧠 Future Improvements
-Figma → Code conversion
+Figma to code conversion
 Live UI preview
 Multi-page app generation
 Full-stack agent support
 🤝 Contributing
 
-Contributions are welcome! Feel free to open issues or submit PRs.
+Contributions are welcome. Feel free to open issues or submit pull requests.
 
 📄 License
 
 MIT License
-
-⭐ Final Idea
-
-Just tell the agent:
-
-"Build a landing page UI"
-
-…and it generates a complete Next.js frontend project automatically 🚀
