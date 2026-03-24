@@ -132,7 +132,7 @@ Responsive dashboard with sidebar navigation, metric cards, and chart components
 
 🚀 Getting Started
 1. Clone the Repo
-git clone https://github.com/your-username/frontend-agent.git
+git clone [https://github.com/your-username/frontend-agent.git](https://github.com/BhadaneAaditya/AI-Frontend-Developer-Agent)
 cd frontend-agent
 2. Install Dependencies
 pip install -r requirements.txt
