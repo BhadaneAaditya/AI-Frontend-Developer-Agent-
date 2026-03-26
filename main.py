@@ -35,7 +35,7 @@ logger = logging.getLogger("frontend_agent")
 
 def create_app() -> FastAPI:
     app = FastAPI(
-        title="Frontend Developer Agent API",
+        title="Frontend Developer Agent",
         description=(
             "AI agent that reads frontend tasks, understands design instructions, "
             "and generates production-ready React / Next.js code."
