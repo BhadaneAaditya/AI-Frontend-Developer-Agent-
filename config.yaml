@@ -1,7 +1,7 @@
 llm:
   provider: "openai"  # or "anthropic"
   model: "gpt-4"
-  api_key: "${OPENAI_API_KEY}"
+  api_key: "${API KEYS}"
   temperature: 0.7
   max_tokens: 4000
 
